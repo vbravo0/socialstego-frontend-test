@@ -1,7 +1,7 @@
 import Graph from "react-vis-network-graph";
 import * as flickr from '../api/flickrAPI'
 import { useEffect, useState } from 'react';
-import init, { SocialNetwork } from "wasm-lib";
+import init, { SocialNetwork } from "socialstego-wasm-lib";
 
 const Network = ({ username }) => {
   const [graph, setGraph] = useState({ nodes: [], edges: [] })
