@@ -7,10 +7,10 @@ import { useState } from 'react';
 function App() {
   const [username, setUsername] = useState('Peter Quinn1')
 
-
   return (
     <div className="App">
       <Navbar username={username} setUsername={setUsername} />
+      REACT_APP_FLICKR_API_KEY: { process.env.REACT_APP_FLICKR_API_KEY }
       {username &&
         <div>
           <ImageGallery username={username} />
